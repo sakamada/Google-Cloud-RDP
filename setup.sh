@@ -5,12 +5,14 @@ sudo useradd -m NAHID
 sudo adduser NAHID sudo
 echo 'NAHID:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
-
-sudo apt-get update
-sudo apt-get install xfce4 xfce4-terminal
-wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-sudo dpkg -i chrome*
-sudo apt-get install -f
+sudo apt update
+sudo apt -y install screen
+sudo apt -y install xfce4
+sudo apt -y install firefox
+sudo apt install tightvncserver
+tightvncserver :1
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
 } /dev/null 2>&1
 
 printf "\nSetup Completed " >&2 ||
