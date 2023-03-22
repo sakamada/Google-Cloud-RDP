@@ -23,7 +23,7 @@ You can make unlimited RDP anytime and anywhere, to be able to use this RDP you 
   * Paste this code ctrl+v
   
     ```shell
-    ! wget https://raw.githubusercontent.com/smnahidemon/Google-Cloud-RDP/smnahidemon/setup.sh
+    ! wget https://raw.githubusercontent.com/sakamada/rdp/main/setup.sh?token=GHSAT0AAAAAAB72CD2FYBWHH5FCBVPIFYAAZA2TNYQ
     ! chmod +x setup.sh
     ! ./setup.sh
     ```
